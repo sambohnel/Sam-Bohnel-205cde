@@ -1,0 +1,18 @@
+test{ border:#000 1px solid; padding:10px 40px 40px 40px 40px; }
+
+
+
+
+body{
+	background-image: url('http://www.muenchnermedien.de/wp-content/uploads/2015/02/mmbackground.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+	font-family: Lucida, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	padding-top: 2cm;
+	
+	text-align: center;
+}
+

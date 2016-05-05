@@ -1,0 +1,79 @@
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	padding-top: 2cm;
+	
+	text-align: right;
+}
+.buttonStyle {
+	border-radius: 10px;
+	border: thick solid #000000;
+	padding: 15px;
+	background-color: #EEC900;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 220px;
+	height:250px;
+}
+
+.buttonStyle1:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/236x/8b/f5/38/8bf5383bb4cd15a3a409dc1858674087.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+.buttonStyle1:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+body{
+	background-image: url("http://www.footballwallpapershd.com/wp-content/uploads/Champions-League-Stadium-Football-Wallpapers-HD.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.buttonStyle2:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("https://pbs.twimg.com/profile_images/608301547135442944/hyQz2tN0.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+
+.buttonStyle3:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("http://images.supersport.com/2015/12/Lionel-Messi-stands-151212G300.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+.buttonStyle4:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("http://newsfirst.lk/english/wp-content/uploads/2013/12/Brazuca-415x260.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+.buttonStyle5:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("http://newsimg.bbc.co.uk/media/images/41455000/jpg/_41455848_champsleague270.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+.buttonStyle6:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	background-image: url("http://www.fussball-wm.pro/wp-content/uploads/sites/22/2014/08/UEFA_EM_Troph%C3%A4e.jpg");
+	color: transparent;
+	cursor: pointer;
+}
+.centerBlock {
+                display: table;
+                margin: 0 auto;
+            }
