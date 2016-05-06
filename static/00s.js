@@ -1,4 +1,4 @@
-var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+var pos = 0, test, test_status, question, choice, choices, choiceA, choiceB, choiceC, correct = 0;
 var questions = [
     [ "Which British player won the Ballon d'Or in 2001?", "Michael Owen", "Steven Gerrard", "David Beckham", "A" ],
 	[ "In Which year did Chelsea win their first Premiership?", "2003", "2005", "2006", "B" ],
@@ -8,7 +8,7 @@ var questions = [
 function _(x){
 	return document.getElementById(x);
 }
-function renderQuestion(){
+function renderQ(){
 	test = _("test");
 	if(pos >= questions.length){
 		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
@@ -19,16 +19,16 @@ function renderQuestion(){
 	}
 	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
 	question = questions[pos][0];
-	chA = questions[pos][1];
-	chB = questions[pos][2];
-	chC = questions[pos][3];
+	choiceA = questions[pos][1];
+	choiceB = questions[pos][2];
+	choiceC = questions[pos][3];
 	test.innerHTML = "<h3>"+question+"</h3>";
-	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
-	test.innerHTML += "<button onclick='checkAnswer()'>Submit</button>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+choiceA+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+choiceB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+choiceC+"<br><br>";
+	test.innerHTML += "<button onclick='checkQ()'>Submit</button>";
 }
-function checkAnswer(){
+function checkQ(){
 	choices = document.getElementsByName("choices");
 	for(var i=0; i<choices.length; i++){
 		if(choices[i].checked){
@@ -39,6 +39,23 @@ function checkAnswer(){
 		correct++;
 	}
 	pos++;
-	renderQuestion();
+	renderQ();
 }
-window.addEventListener("load", renderQuestion, false);
+window.addEventListener("load", renderQ, false);
+
+function hintQ1()
+{
+	alert("Q1 - He was a teenage sensation")
+}
+function hintQ2()
+{
+	alert("Q2 - The 'Special one was manager'")
+}
+function hintQ3()
+{
+	alert("Q3 - Messi, Iniesta & Xavi ran football this year")
+}
+function hintQ4()
+{
+	alert("Q4 - He scored 19 goals this year")
+}

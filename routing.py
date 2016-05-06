@@ -1,4 +1,5 @@
 from flask import Flask, make_response, abort, redirect, render_template 
+import os
 
 app = Flask(__name__);
 
@@ -29,3 +30,9 @@ def WC():
 @app.route('/EURO')
 def EURO():
     return render_template("EURO.html")
+    
+#Run the application
+if __name__ == '__main__':
+    app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT',8080)))
+    
+    
